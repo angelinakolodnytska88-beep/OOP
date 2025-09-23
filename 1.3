@@ -1,0 +1,22 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Laboratorna_1_3
+{
+    internal class Program
+    {
+        static void Main()
+        {
+            Console.Write("Введіть годину (0-23): ");
+            int h = int.Parse(Console.ReadLine());
+
+            string[] greetings = { "Доброї ночі!", "Доброго ранку!", "Добрий день!", "Добрий вечір!" };
+            int index = (h / 6) % 4;
+
+            Console.WriteLine(greetings[index]);
+        }
+        }
+}
